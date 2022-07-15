@@ -1,3 +1,4 @@
+import { DesignCard } from "./components/DesignCard";
 import { LogoCodelandia } from "./components/LogoCodelandia";
 
 export function App() {
@@ -23,7 +24,11 @@ export function App() {
             </p>
           </header>
 
-          <section>       
+          <section className="grid gap-6 mb-14"> 
+            <DesignCard />       
+            <DesignCard />  
+            <DesignCard />  
+            <DesignCard />    
           </section>
         </main>
     </div>
