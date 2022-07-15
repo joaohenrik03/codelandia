@@ -7,19 +7,20 @@ type DesignCardProps = {
 
 export function DesignCard(props: DesignCardProps) {
     return(
-        <div className="bg-stone-800 border border-purple-500 rounded-lg p-5 md:mb-4">
-            <img 
-                className="rounded-md h-[222px] w-full mb-4 object-cover" 
-                src="https://source.unsplash.com/random" 
-                alt="" 
-            />
-
-            <h2 className="font-plex font-medium text-xl md:text-2xl text-gray-50 text-left mb-4 md:mb-5">
-                {props.name}
-            </h2>
-            <p className="font-medium text-gray-300 leading-7 text-left mb-6 md:mb-12 md:text-[18px]">
-               {props.bio}
-            </p>
+        <div className="flex flex-col justify-between bg-stone-800 border border-purple-500 rounded-lg p-5 md:mb-4 h-[500px]">
+            <div>
+                <img
+                    className="rounded-md h-[222px] w-full mb-4 object-cover"
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                />
+                <h2 className="font-plex font-medium text-xl md:text-2xl text-gray-50 text-left mb-4 md:mb-5">
+                    {props.name}
+                </h2>
+                <p className="font-medium text-gray-300 leading-7 text-left  md:text-[18px]">
+                   {props.bio}
+                </p>
+            </div>
 
             <div className="flex gap-2 md:justify-start">
                 <a 
