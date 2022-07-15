@@ -9,6 +9,23 @@ export function App() {
             Entrar na comunidade
           </a>
         </header>
+
+        <main>
+          <header>
+            <span>
+              Comunidade dev
+            </span>
+            <h1>
+              Projetos da comunidade Codelândia
+            </h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.
+            </p>
+          </header>
+
+          <section>       
+          </section>
+        </main>
     </div>
   )
 }
