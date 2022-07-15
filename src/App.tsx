@@ -31,10 +31,19 @@ export function App() { //md
           </header>
 
           <section className="grid gap-6 mb-14 md:grid-cols-2 md:mb-36"> 
-            <DesignCard />       
-            <DesignCard />  
-            <DesignCard />  
-            <DesignCard />    
+            <DesignCard 
+              name='Rachi'
+              bio='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.'
+              demo=''
+              url='https://github.com/joaohenrik03/rachi'
+            />       
+            
+            <DesignCard 
+              name='Rachi'
+              bio='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.'
+              demo=''
+              url='https://github.com/joaohenrik03/rachi'
+            />   
           </section>
         </main>
 
