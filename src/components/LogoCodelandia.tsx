@@ -1,9 +1,8 @@
 export function LogoCodelandia() {
   return (
     <svg
+      className="w-[206px] lg:w-[251px] h-[32px]"
       xmlns="http://www.w3.org/2000/svg"
-      width="145"
-      height="19"
       fill="none"
       viewBox="0 0 145 19"
     >
