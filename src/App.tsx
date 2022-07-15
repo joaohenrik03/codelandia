@@ -1,9 +1,10 @@
 import { DesignCard } from "./components/DesignCard";
+import { KeyAndParenthesesIcon } from "./components/KeyAndParenthesesIcon";
 import { LogoCodelandia } from "./components/LogoCodelandia";
 
 export function App() {
   return (
-    <div className="w-[90%] mx-auto">
+    <div className="w-[90%] mx-auto pb-36">
         <header className="my-6 flex flex-col items-center justify-center gap-12">
           <LogoCodelandia />
           <a href="#" className="inline-block w-[100%] py-5 border border-purple-500 rounded-md font-sans text-center text-gray-50 uppercase">
@@ -31,6 +32,20 @@ export function App() {
             <DesignCard />    
           </section>
         </main>
+
+        <footer>
+          <i className="flex justify-center mb-6">
+            <KeyAndParenthesesIcon />  
+          </i>
+          <div className="w-full flex gap-8 mx-auto">
+            <span className="text-gray-300 font-plex text-sm">
+              © 2022 - João Henrik
+            </span>
+            <span className="text-gray-300 font-plex text-sm">
+              Codelândia
+            </span>
+          </div>
+        </footer>
     </div>
   )
 }
