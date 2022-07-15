@@ -4,7 +4,7 @@ import { LogoCodelandia } from "./components/LogoCodelandia";
 
 export function App() { //md
   return (
-    <div className="w-[90%] mx-auto pb-36">
+    <div className="w-[90%] lg:w-[70%] mx-auto pb-36">
         <header className="mt-6 mb-12 md:mt-12 md:mb-24 flex flex-col items-center gap-12 md:flex-row justify-between">
           <LogoCodelandia />
           <nav className="w-full md:w-auto gap-16 flex items-center justify-between">
@@ -18,19 +18,19 @@ export function App() { //md
         </header>
 
         <main>
-          <header className="mb-7">
-            <span className="font-plex text-green-400 text-md font-bold tracking-wider uppercase mb-2">
+          <header className="mb-7 md:mb-32 lg:max-w-[800px]">
+            <span className="font-plex text-green-400 text-md font-bold tracking-wider uppercase mb-2 md:text-2xl md:mb-3">
               Comunidade dev
             </span>
-            <h1 className="font-plex text-left text-2xl font-semibold text-gray-50 mb-4">
+            <h1 className="font-plex text-left text-2xl font-semibold text-gray-50 mb-4 md:text-6xl md:mb-8">
               Projetos da comunidade Codelândia
             </h1>
-            <p className="font-sans font-medium text-gray-300 text-left leading-5">
+            <p className="font-sans font-medium text-gray-300 text-left leading-5 md:text-2xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.
             </p>
           </header>
 
-          <section className="grid gap-6 mb-14"> 
+          <section className="grid gap-6 mb-14 md:grid-cols-2 md:mb-36"> 
             <DesignCard />       
             <DesignCard />  
             <DesignCard />  
@@ -38,11 +38,11 @@ export function App() { //md
           </section>
         </main>
 
-        <footer>
+        <footer className="md:flex md:items-center md:justify-between">
           <i className="flex justify-center mb-6">
             <KeyAndParenthesesIcon />  
           </i>
-          <div className="w-full flex justify-center gap-8 mx-auto">
+          <div className="w-full md:w-auto flex justify-center gap-8 md:gap-12 mx-auto md:mx-0">
             <span className="text-gray-300 font-plex text-md">
               © 2022 - João Henrik
             </span>
