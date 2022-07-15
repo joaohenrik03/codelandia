@@ -2,7 +2,7 @@ export function DesignCard() {
     return(
         <div className="bg-stone-800 border border-purple-500 rounded-lg p-5">
             <img 
-                className="rounded-md max-h-[222px] w-full mb-4 object-cover" 
+                className="rounded-md h-[222px] w-full mb-4 object-cover" 
                 src="https://source.unsplash.com/random" 
                 alt="" 
             />
