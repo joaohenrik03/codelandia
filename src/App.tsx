@@ -2,7 +2,19 @@ import { DesignCard } from "./components/DesignCard";
 import { KeyAndParenthesesIcon } from "./components/KeyAndParenthesesIcon";
 import { LogoCodelandia } from "./components/LogoCodelandia";
 
-export function App() { //md
+import rachiImg from "./assets/rachi.png";
+
+export function App() { 
+  const projects = [
+    {
+      name: 'Rachi',
+      bio: 'Página no formato One Page, responsiva, para usar em diversos tipos de micro, pequena e média empresas. Contém as seguintes seções: Header, Navigation, Home, Sobre, Serviços, Contato e Footer.',
+      demo: '#',
+      url: 'https://github.com/joaohenrik03/rachi',
+      imgSrc: rachiImg,
+    },
+  ];
+
   return (
     <div className="w-[90%] lg:w-[70%] mx-auto pb-36">
         <header className="mt-6 mb-12 md:mt-12 md:mb-24 flex flex-col items-center gap-12 md:flex-row justify-between">
@@ -31,19 +43,17 @@ export function App() { //md
           </header>
 
           <section className="grid gap-6 mb-14 md:grid-cols-2 md:mb-36"> 
-            <DesignCard 
-              name='Rachi'
-              bio='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.'
-              demo=''
-              url='https://github.com/joaohenrik03/rachi'
-            />       
-            
-            <DesignCard 
-              name='Rachi'
-              bio='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.'
-              demo=''
-              url='https://github.com/joaohenrik03/rachi'
-            />   
+            {
+              projects.map(project => (
+                <DesignCard 
+                  name={project.name}
+                  bio={project.bio}
+                  demo={project.bio}
+                  url={project.url}
+                  imgSrc={project.imgSrc}
+                />   
+              ))
+            }
           </section>
         </main>
 
