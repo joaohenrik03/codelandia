@@ -3,20 +3,28 @@ import { KeyAndParenthesesIcon } from "./components/KeyAndParenthesesIcon";
 import { LogoCodelandia } from "./components/LogoCodelandia";
 
 import rachiImg from "./assets/rachi.png";
+import helpdogImg from "./assets/helpdog.png";
 
 export function App() { 
   const projects = [
     {
       name: 'Rachi',
-      bio: 'Página no formato One Page, responsiva, para usar em diversos tipos de micro, pequena e média empresas. Contém as seguintes seções: Header, Navigation, Home, Sobre, Serviços, Contato e Footer.',
-      demo: '#',
+      bio: 'Página no formato One Page, responsiva, para usar em diversos tipos de micro, pequena e média empresas.',
+      demo: 'https://joaohenrik03.github.io/rachi/',
       url: 'https://github.com/joaohenrik03/rachi',
       imgSrc: rachiImg,
+    },
+    {
+      name: 'HelpDog',
+      bio: 'Página para arrecadar doações para cães.',
+      demo: 'https://help-dog.vercel.app/',
+      url: 'https://github.com/joaohenrik03/help-dog',
+      imgSrc: helpdogImg,
     },
   ];
 
   return (
-    <div className="w-[90%] lg:w-[70%] mx-auto pb-36">
+    <div className="w-[90%] lg:w-[80%] xl:w-[70%] mx-auto pb-36">
         <header className="mt-6 mb-12 md:mt-12 md:mb-24 flex flex-col items-center gap-12 md:flex-row justify-between">
           <LogoCodelandia />
           <nav className="w-full md:w-auto gap-16 flex items-center justify-between">
