@@ -8,12 +8,12 @@ type DesignCardProps = {
 
 export function DesignCard(props: DesignCardProps) {
     return(
-        <div className="flex flex-col justify-between bg-stone-800 border border-purple-500 rounded-lg p-5 md:mb-4">
+        <div className="flex flex-col justify-between bg-stone-800 border border-purple-500 rounded-lg p-5 md:mb-4 min-h-[500px]">
             <div>
                 <img
-                    className="rounded-md h-[222px] w-full mb-4 object-cover"
+                    className="rounded-md h-[222px] w-full mx-auto mb-4 object-cover object-left smmd:max-w-[480px] md:max-w-full"
                     src={props.imgSrc}
-                    alt=""
+                    alt="Foto do projeto"
                 />
                 <h2 className="font-plex font-medium text-xl md:text-2xl text-gray-50 text-left mb-4 md:mb-5">
                     {props.name}
