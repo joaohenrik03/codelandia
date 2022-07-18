@@ -20,10 +20,10 @@ export function App() {
         <header className="mt-6 mb-12 md:mt-12 md:mb-24 flex flex-col items-center gap-12 md:flex-row justify-between">
           <LogoCodelandia />
           <nav className="w-full md:w-auto gap-16 flex items-center justify-between">
-            <a href="#" className="hidden text-gray-50 uppercase md:inline-block">
+            <a href="https://github.com/joaohenrik03" className="hidden text-gray-50 uppercase md:inline-block" target="_blank">
               Meu GitHub
             </a>
-            <a href="#" className="inline-block w-[100%] md:w-64 py-5 border border-purple-500 rounded-md font-sans text-center text-gray-50 uppercase">
+            <a href="https://discord.gg/wNCWTVuxyz" className="inline-block w-[100%] md:w-64 py-5 border border-purple-500 rounded-md font-sans text-center text-gray-50 uppercase" target="_blank">
               Entrar na comunidade
             </a>
           </nav>
