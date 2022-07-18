@@ -48,7 +48,7 @@ export function App() {
                 <DesignCard 
                   name={project.name}
                   bio={project.bio}
-                  demo={project.bio}
+                  demo={project.demo}
                   url={project.url}
                   imgSrc={project.imgSrc}
                 />   
