@@ -4,6 +4,7 @@ import { LogoCodelandia } from "./components/LogoCodelandia";
 
 import rachiImg from "./assets/rachi.png";
 import helpdogImg from "./assets/helpdog.png";
+import blogImg from "./assets/blog.png";
 
 export function App() { 
   const projects = [
@@ -20,6 +21,13 @@ export function App() {
       demo: 'https://help-dog.vercel.app/',
       url: 'https://github.com/joaohenrik03/help-dog',
       imgSrc: helpdogImg,
+    },
+    {
+      name: 'Blog',
+      bio: 'Uma página de posts para ser usando em um blog.',
+      demo: '',
+      url: 'https://github.com/joaohenrik03/blog-illustration',
+      imgSrc: blogImg,
     },
   ];
 
@@ -59,6 +67,7 @@ export function App() {
                   demo={project.demo}
                   url={project.url}
                   imgSrc={project.imgSrc}
+                  key={project.name}
                 />   
               ))
             }
