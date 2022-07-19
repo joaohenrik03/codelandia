@@ -7,7 +7,9 @@ type DesignCardProps = {
 }
 
 export function DesignCard(props: DesignCardProps) {
-    return(
+    const demoExists = props.demo.trim() === '';
+
+    return (
         <div className="flex flex-col justify-between bg-stone-800 border border-purple-500 rounded-lg p-5 md:mb-4 min-h-[500px]">
             <div>
                 <img
@@ -19,20 +21,32 @@ export function DesignCard(props: DesignCardProps) {
                     {props.name}
                 </h2>
                 <p className="font-medium text-gray-300 leading-7 text-left  md:text-[18px] mb-4 md:mb-5">
-                   {props.bio}
+                    {props.bio}
                 </p>
             </div>
 
             <div className="flex gap-2 md:justify-start">
-                <a 
-                    href={props.demo} 
-                    className="flex-1 bg-green-400 border rounded-lg border-green-400 text-center uppercase font-sans font-bold color-stone-900 py-2 max-w-[165px]"
-                    target="_blank"
-                >
-                    Demo
-                </a>
-                <a 
-                    href={props.url} 
+                {
+                    demoExists ? (
+                        <button
+                            disabled
+                            className="flex-1 bg-green-400 border rounded-lg border-green-400 text-center uppercase font-sans font-bold color-stone-900 py-2 max-w-[165px] opacity-50 cursor-not-allowed"
+                        >
+                            Demo
+                        </button>
+
+                    ) : (
+                        <a
+                            href={props.demo}
+                            className="flex-1 bg-green-400 border rounded-lg border-green-400 text-center uppercase font-sans font-bold color-stone-900 py-2 max-w-[165px]"
+                            target="_blank"
+                        >
+                            Demo
+                        </a>
+                    )
+                }
+                <a
+                    href={props.url}
                     className="flex-1 border rounded-lg border-green-400 text-center uppercase font-sans font-bold text-gray-50 py-2 max-w-[165px]"
                     target="_blank"
                 >
